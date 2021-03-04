@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form action="numero.php" method="POST">
+    <form action="edit_numero.php" method="POST">
         <label for="numero">ingrese el numero </label>
         <input type="text" name="numero" id="numero">    
         <input type="submit" value="enviar">

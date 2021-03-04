@@ -1,0 +1,91 @@
+#myVideo {  
+    position: absolute;  
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  #continer{
+    position: absolute;
+    z-index: 3200;
+    overflow: hidden;
+
+  }
+  img:nth-child(8){
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+  }
+
+  @keyframes slidein {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    
+  }
+}
+
+img:nth-child(7){
+    animation-duration: 5s;
+    animation-name: slidein;    
+  }
+
+  @keyframes slidein {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    
+  }
+}
+
+img:nth-child(6){
+    animation-duration: 7s;
+    animation-name: slidein;    
+  }
+
+  @keyframes slidein {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    
+  }
+}
+
+img:nth-child(5){
+    animation-duration: 9s;
+    animation-name: slidein;    
+  }
+
+  @keyframes slidein {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    
+  }
+}
+
+
+img:nth-child(4){
+    animation-duration: 10s;
+    animation-name: slidein;    
+  }
+
+  @keyframes slidein {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    
+  }
+}
+
