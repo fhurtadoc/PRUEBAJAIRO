@@ -2,9 +2,7 @@ $(document).ready(function(){
 fretchNumber()
 
 setInterval(function(){
-    let continer = document.getElementById("continer");
-    let img_continer = document.getElementsByClassName("numero_img");
-    continer.removeChild(img_continer);    
+   
     fretchNumber();
 }, 5000)
 
@@ -19,7 +17,7 @@ function fretchNumber(){
                 
                 case "0":
                     newDiv.setAttribute ("class", "numero_img");
-                    newDiv.setAttribute ("src", "numerosimg/0c.pmg");
+                    newDiv.setAttribute ("src", "numerosimg/0c.png");
                 break    
 
                 case "1":
