@@ -2,19 +2,17 @@ $(document).ready(function(){
 fretchNumber()
 
 setInterval(function(){
-   
-    fretchNumber();
-}, 5000)
-
+    $(".numero_img").remove();
+    fretchNumber();    
+}, 10000,)
 
 function fretchNumber(){
     $.get("list_numero.php", function(res, err){
         let numero=JSON.parse(res);        
         for(let un_numero of numero.numero){            
-        const newDiv=document.createElement("img");       
+        const newDiv=document.createElement("img");         
         let continer=document.querySelector("#continer").append(newDiv);         
-            switch(un_numero){
-                
+            switch(un_numero){                
                 case "0":
                     newDiv.setAttribute ("class", "numero_img");
                     newDiv.setAttribute ("src", "numerosimg/0c.png");
@@ -38,6 +36,7 @@ function fretchNumber(){
                 case "4":
                     newDiv.setAttribute ("class", "numero_img");
                     newDiv.setAttribute ("src", "numerosimg/4c.png");
+                    
                 break    
 
                 case "5":
