@@ -18,8 +18,6 @@ function fretchNumber(){
                     newDiv.setAttribute ("src", "numerosimg/0c.png");
                 break    
 
-                casa
-
                 case "1":
                     newDiv.setAttribute ("class", "numero_img");
                     newDiv.setAttribute ("src", "numerosimg/1c.png");
