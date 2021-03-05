@@ -1,20 +1,29 @@
 $(document).ready(function(){
 fretchNumber()
 
-const numeroActual = "556"
+
+let numeroAnterior = [];
 
 setInterval(function(){
     $(".numero_img").remove();
-    fretchNumber();    
-}, 10000,)
+
+    numeroAnterior.splice(1,1);
+
+    fretchNumber();   
+
+}, 5000,)
 
 function fretchNumber(){
     $.get("list_numero.php", function(res, err){
         let numero=JSON.parse(res);
-        
 
-        
-        if (numeroActual != numero) {
+        numeroAnterior.push(numero);
+
+
+
+        console.log(numeroAnterior);
+
+        if (numeroAnterior != numero) {
             
             for(let un_numero of numero.numero){            
                 const newDiv=document.createElement("img");         
@@ -24,6 +33,8 @@ function fretchNumber(){
                         
         
                     switch(un_numero){                
+                        
+
                         case "0":
                             newDiv.setAttribute ("class", "numero_img");
                             newDiv.setAttribute ("src", "numerosimg/0c.png");
@@ -74,14 +85,24 @@ function fretchNumber(){
                             newDiv.setAttribute ("class", "numero_img");
                             newDiv.setAttribute ("src", "numerosimg/9c.png");
                         break    
+                    
+
+
                     }
+
+                     
         
                 }
+
+                
+
         }
 
         
         
     });
+
+
 
 }
     
