@@ -29,7 +29,7 @@ function fretchNumber(){
                 const newDiv=document.createElement("img");         
                 let continer=document.querySelector("#continer").append(newDiv);  
         
-                     
+                     hola
                         
         
                     switch(un_numero){                
