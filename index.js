@@ -21,16 +21,25 @@ function fretchNumber(){
 
 
 
-        console.log(numeroAnterior);
+        //console.log(numeroAnterior);
 
-        if (numeroAnterior != numero) {
+        for (let numero_anterior of numeroAnterior){
+            console.log(numero_anterior);
+
+            if (numero_anterior != numero) {
             
+                let numero_unidad = numero_anterior.numero [0];
+
+                console.log(numero_unidad);
+
+
+
             for(let un_numero of numero.numero){            
                 const newDiv=document.createElement("img");         
                 let continer=document.querySelector("#continer").append(newDiv);  
         
                     
-                        
+                        console.log(numero.numero);
         
                     switch(un_numero){                
                         
@@ -97,6 +106,9 @@ function fretchNumber(){
                 
 
         }
+        }
+
+        
 
         
         
